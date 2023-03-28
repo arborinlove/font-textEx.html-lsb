@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body {
+    font-family: '나눔바른고딕','맑은 고딕',돋움,sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/***** main *****/
+main > h1 {
+    background-color: skyblue;
+    color: #000;
+    text-align: center;/* 인라인 요소 중앙 정렬 */
+    font-family: '한컴산뜻돋움';
+}
+main .deco_color {/* 하위 선택자: 기준 선택자 하위(자식, 자손 모두 포함)에 있는 선택자. 띄어쓰기로 표기 */
+    color:red;
+    font-size: 16px;
+}
+.deco_color {
+    color:red;
+    font-size: 16px;
+}
+/***** section *****/
+main > section {
+    text-align: center;
+    background-color: #ddd;
+}
+main > section > h2 {
+    color: #f79524;
+   text-decoration: underline;
+   font-size: 22px;
+   font-weight: normal;
+}
+main> section > a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(107, 211, 4, 0.747);
+}
+main> section > a:hover {
+    background-color: rgb(90, 148, 90);
+}
+/***** container *****/
+main > .container {
+    background-color: #e3d5ca;
+}
+main > .container h2 {
+    text-align: center;
+    text-decoration: underline;
+    color:#d90429;
+}
+main > .container section > h3 {
+    background-color: #4293f7;
+    color:#fff;
+    text-align: right;
+}
+main > .container h3.deco_left {/* 종속 선택자: 띄어쓰기 없이 작성. h3요소가 가진 클래스 중에 deco_left 값을 가진 요소 탐색 */
+    background-color: transparent;
+    color: #222;
+    text-align: left;
+}
+
+
+/* main > .container > section > ul > .deco_bg {
+    background-color: red; */
+main > .container section > ul > .deco_bg {
+    background-color: #f8961e;
+}
