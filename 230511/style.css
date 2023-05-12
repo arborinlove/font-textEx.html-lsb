@@ -34,48 +34,63 @@ header .header-wrapper .header-nav li:hover {
 }
 
 /* main */
-article .main-gradient p {
+article {
+  width: 100%;
+  height: 100vh;
+}
+.def {
+  width: 100%;
+  height: 70vh;
+}
+.def img {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.main-gradient p {
   text-indent: -9999px;
   background-image: linear-gradient(90deg, #0047ff, #030c22);
   height: 30px;
   position: relative;
 }
-article .main-img {
-  background: url(./images/flight-1458986_960_720.png) no-repeat 50% / cover;
+.def .main-img {
   text-indent: -9999px;
   position: relative;
   padding: 360px;
+  object-fit: fill;
 }
-article .main-img-txt {
+.def .main-img-txt {
   position: absolute;
-  left: 900px;
+  left: 750px;
   top: 400px;
   color: #fff;
   line-height: 2;
 }
-article .main-txt h1 {
+.def .main-img-txt h1 {
   font-size: 50px;
 }
-article .main-nav {
+.def .main-nav {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px 0;
   margin-top: -70px;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   border-radius: 5px;
   flex-wrap: wrap;
 }
-article .main-nav ul {
+.def .main-nav ul {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
-article .main-nav li {
+.def .main-nav li {
   border-right: 1px solid #ccc;
   margin: 20px 10px;
   padding: 30px;
 }
-article .main-nav li:last-child {
+.def .main-nav li:last-child {
   border: none;
 }
