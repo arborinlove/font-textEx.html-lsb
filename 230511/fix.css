@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans KR", Helvetica, Arial, Lucida, sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 260px;
+  height: 345px;
+}
+
+.flex {
+  display: flex;
+}

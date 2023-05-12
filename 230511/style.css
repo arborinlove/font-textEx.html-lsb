@@ -1,5 +1,82 @@
 @charset "utf-8";
 
-body {
-    font-family: 'Noto Sans KR',Helvetica,Arial,Lucida,sans-serif;
+@import url(./root.css);
+@import url(./fix.css);
+
+/* header */
+header {
+  width: 100%;
+  z-index: 1000;
+}
+header .header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  width: 96%;
+  height: 80px;
+  margin: 0 auto;
+}
+header .header-wrapper h1 {
+  background: url(./images/expo_logo.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 130px;
+  height: 100%;
+}
+header .header-wrapper .header-nav {
+  font-weight: 600;
+  width: 70%;
+}
+header .header-wrapper .header-nav li {
+  width: 30%;
+}
+header .header-wrapper .header-nav li:hover {
+  color: #012964;
+}
+
+/* main */
+article .main-gradient p {
+  text-indent: -9999px;
+  background-image: linear-gradient(90deg, #0047ff, #030c22);
+  height: 30px;
+  position: relative;
+}
+article .main-img {
+  background: url(./images/flight-1458986_960_720.png) no-repeat 50% / cover;
+  text-indent: -9999px;
+  position: relative;
+  padding: 360px;
+}
+article .main-img-txt {
+  position: absolute;
+  left: 900px;
+  top: 400px;
+  color: #fff;
+  line-height: 2;
+}
+article .main-txt h1 {
+  font-size: 50px;
+}
+article .main-nav {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* left: 750px;
+  top: 770px; */
+  width: 800px;
+  height: 120px;
+  margin: -75px 0 0 550px;
+  background-color: #eee;
+  border-radius: 15px;
+}
+article .main-nav ul {
+  justify-content: center;
+  align-items: center;
+}
+article .main-nav li {
+  border-right: 1px solid #ccc;
+  margin: 20px 10px;
+  padding: 30px;
+}
+article .main-nav li:last-child {
+  border: none;
 }
