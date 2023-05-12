@@ -57,18 +57,17 @@ article .main-txt h1 {
   font-size: 50px;
 }
 article .main-nav {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  /* left: 750px;
-  top: 770px; */
-  width: 800px;
-  height: 120px;
-  margin: -75px 0 0 550px;
-  background-color: #eee;
-  border-radius: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin-top: -70px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  flex-wrap: wrap;
 }
 article .main-nav ul {
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
