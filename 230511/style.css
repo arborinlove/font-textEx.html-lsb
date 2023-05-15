@@ -4,33 +4,45 @@
 @import url(./fix.css);
 
 /* header */
-header {
+.abc {
   width: 100%;
   z-index: 1000;
 }
-header .header-wrapper {
+.abc .header-wrapper {
   justify-content: space-between;
   align-items: center;
   max-width: 1800px;
-  width: 96%;
+  width: 70%;
   height: 80px;
   margin: 0 auto;
 }
-header .header-wrapper h1 {
+.abc .header-wrapper h1 {
   background: url(./images/expo_logo.png) no-repeat 0 50% / contain;
   text-indent: -9999px;
   width: 130px;
   height: 100%;
+  margin-left: 20px;
 }
-header .header-wrapper .header-nav {
-  font-weight: 600;
-  width: 70%;
+.abc .header-nav {
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  
 }
-header .header-wrapper .header-nav li {
-  width: 30%;
+.abc .header-nav li {
+  width: 10%;
 }
-header .header-wrapper .header-nav li:hover {
-  color: #012964;
+.abc .header-nav li:hover {
+  color: #021368;
+}
+.abc .material-symbols-outlined {
+  justify-content: center;
+  align-items: center;
+}
+.abc .material-symbols-outlined:hover {
+  color: #021368;
 }
 
 /* main */
@@ -62,35 +74,165 @@ article {
 .def .main-img-txt {
   position: absolute;
   left: 750px;
-  top: 400px;
+  top: 350px;
   color: #fff;
   line-height: 2;
 }
 .def .main-img-txt h1 {
   font-size: 50px;
+  font-weight: bold;
 }
-.def .main-nav {
+.def .main-img-txt p:last-child {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 200px;
+  padding: 5px;
+  margin: 20px auto;
+
+  transition: 0.5s;
+}
+.def .main-img-txt p:last-child:hover {
   background-color: #fff;
-  border-radius: 5px;
-  padding: 20px 0;
-  margin-top: -70px;
+  color: #000;
+}
+.def .main-list {
+  background-color: #fff;
+  width: 50%;
+  justify-content: space-evenly;
+  border-radius: 10px;
   position: absolute;
+  margin-top: -70px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
-  border-radius: 5px;
-  flex-wrap: wrap;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
-.def .main-nav ul {
+.def .main-list li {
+  border-right: 1px solid #ddd;
+  width: 25%;
+  padding: 50px;
+}
+.def .main-list li:last-child {
+  border: none;
+}
+.def .main-list li a:hover {
+  color: #001857;
+}
+.article-txt {
+  width: 100%;
+  margin: 10px 0 30px;
+  line-height: 1.6;
+}
+.article-txt > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4e5889;
+}
+.article-txt > p {
+  width: 650px;
   margin: 0 auto;
-  justify-content: center;
+  color: #898989;
+}
+.article-txt2 {
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
 }
-.def .main-nav li {
-  border-right: 1px solid #ccc;
-  margin: 20px 10px;
-  padding: 30px;
+.article-img {
+  width: 100%;
+  justify-content: space-evenly;
 }
-.def .main-nav li:last-child {
-  border: none;
+.article-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.txt-box {
+  margin-top: 40px;
+}
+.txt-box > h4 {
+  font-size: 18px;
+}
+.txt-box > p {
+  font-size: 14px;
+  color: #898989;
+}
+.size {
+  height: 400px;
+}
+.article-box {
+  justify-content: space-evenly;
+  align-items: center;
+
+  transition: 0.3s;
+}
+.article-box p {
+  background-color: #ddd;
+  padding: 30px;
+  width: 200px;
+
+  transition: 0.3s;
+}
+.article-box p:hover {
+  border-radius: 40px;
+  background-color: #bbb;
+}
+
+/* aside */
+aside .aside-txt {
+  width: 100%;
+  margin-bottom: 60px;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+/* footer */
+.pqr {
+  width: 100%;
+  height: 40vh;
+  background-color: #001857;
+  color: #fff;
+}
+.pqr {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pqr .footer-start h1 {
+  background: url(./images/expo_logo.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 150px;
+  height: 150px;
+  margin-top: -160px;
+}
+.pqr .footer-menu {
+  flex-flow: column;
+  line-height: 1.8;
+}
+.pqr .footer-menu h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.pqr .footer-menu p {
+  font-size: 16px;
+  color: #bbb;
+}
+.pqr .footer-menu p:hover {
+  color: #aaa;
+}
+.pqr .footer-map {
+  line-height: 1.8;
+  text-align: left;
+}
+.pqr .footer-map h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.pqr .footer-map p {
+  font-size: 16px;
+  color: #bbb;
+}
+.pqr .footer-map ul {
+  list-style: disc;
+  color: #bbb;
+  padding-left: 20px;
 }

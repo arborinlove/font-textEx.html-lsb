@@ -6,8 +6,7 @@ body {
 }
 
 img {
-  width: 260px;
-  height: 345px;
+  /* width: 100%; */
 }
 
 .flex {
